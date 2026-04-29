@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Maths Workshop | Q-Logic Labs Jalalabad</title>
+    <meta name="description"
+        content="Join the ₹49 Vedic Maths Demo on May 10. 7-Day Workshop starts May 12. Only 15 seats per batch. Q-Logic Labs, Jalalabad.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        hindi: ['Noto Sans Devanagari', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',
+                            gold: '#d97706',
+                            goldHover: '#b45309',
+                            cyan: '#00B4D8',
+                            textDark: '#1e293b',
+                            bgLight: '#f8fafc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 14px rgba(34, 197, 94, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+            }
+        }
+
+        .badge-shine {
+            background: linear-gradient(90deg, #fbbf24, #f59e0b, #fbbf24);
+            background-size: 200% 100%;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-brand-textDark bg-brand-bgLight">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-navy text-white text-center py-2 text-xs sm:text-sm font-medium">
+        <i class="fa-solid fa-award text-brand-cyan mr-2"></i>
+        Taught by an educator with <span class="font-bold">10+ years</span> in Vedic Maths & Quant
+    </div>
+
+    <!-- Hero -->
+    <section class="relative bg-brand-navy pt-10 pb-12 overflow-hidden">
+        <div class="absolute inset-0 hero-pattern opacity-50"></div>
+        <div class="relative max-w-2xl mx-auto px-5 text-center">
+
+            <!-- Workshop badge -->
+            <div
+                class="inline-block badge-shine text-brand-navy px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 shadow-lg">
+                ⚡ Limited Seats Workshop
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight mb-4">
+                Vedic Maths <br />
+                <span class="text-brand-cyan">Workshop</span>
+            </h1>
+
+            <p class="font-hindi text-xl sm:text-2xl text-white/90 font-semibold mb-2">
+                तेज़ गणना • मज़बूत आत्मविश्वास • बेहतर परिणाम
+            </p>
+
+            <p class="text-slate-300 text-base mb-8 mt-4">
+                Solve <span class="text-brand-cyan font-bold">98 × 97</span> in 5 seconds.<br />
+                <span class="italic">Hum sikhayenge kaise.</span>
+            </p>
+
+            <!-- Offer Card -->
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 mb-8">
+                <div class="text-brand-cyan text-xs uppercase tracking-wider font-bold mb-2">Demo Class</div>
+                <div class="flex items-baseline justify-center gap-2 mb-3">
+                    <span class="text-5xl font-bold text-white">₹49</span>
+                    <span class="text-slate-400 line-through text-lg">₹199</span>
+                </div>
+                <div class="text-white text-sm">
+                    <i class="fa-solid fa-calendar text-brand-cyan mr-2"></i>
+                    <span class="font-semibold">Saturday, May 10</span> · 60 minutes
+                </div>
+                <div class="text-white text-sm mt-1">
+                    <i class="fa-solid fa-book text-brand-cyan mr-2"></i>
+                    Includes Maths Shortcut Booklet (worth ₹150)
+                </div>
+                <div
+                    class="mt-3 inline-flex items-center bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 bg-red-400 rounded-full mr-2 animate-pulse"></span>
+                    Only 15 seats per batch
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Buttons -->
+    <section class="bg-white py-10 px-5 -mt-6 relative z-10">
+        <div class="max-w-md mx-auto">
+            <div class="bg-white rounded-2xl shadow-2xl p-6 border border-slate-100">
+                <h2 class="text-center text-brand-textDark font-serif text-xl font-bold mb-1">
+                    Get Started in 1 Tap
+                </h2>
+                <p class="text-center text-slate-500 text-sm mb-6">Pick your preferred way to connect</p>
+
+                <!-- WhatsApp CTA -->
+                <a href="https://wa.me/919876650116?text=Namaste%2C%20mujhe%20Vedic%20Maths%20Workshop%20ke%20baare%20mein%20jaankari%20chahiye"
+                    target="_blank"
+                    class="pulse-ring flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-xl text-lg font-bold shadow-lg transition-all transform hover:-translate-y-0.5 mb-4">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+                <p class="text-center text-xs text-slate-500 mb-6">
+                    Pre-filled message · Talk to founder Noopur directly
+                </p>
+
+                <div class="flex items-center gap-3 my-5">
+                    <div class="flex-1 h-px bg-slate-200"></div>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider">or</span>
+                    <div class="flex-1 h-px bg-slate-200"></div>
+                </div>
+
+                <!-- Register CTA -->
+                <a href="#register"
+                    class="flex items-center justify-center gap-3 w-full bg-brand-navy hover:bg-slate-800 text-white px-6 py-4 rounded-xl text-lg font-bold shadow-lg transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-pen-to-square text-xl"></i>
+                    <span>Register for Demo</span>
+                </a>
+                <p class="text-center text-xs text-slate-500 mt-2">
+                    Quick form · Pay ₹49 at the institute
+                </p>
+            </div>
+
+            <!-- Urgency -->
+            <div class="mt-6 text-center">
+                <p class="inline-flex items-center bg-red-50 text-red-700 px-4 py-2 rounded-full text-sm font-semibold">
+                    <i class="fa-solid fa-clock mr-2"></i>
+                    Registration closes May 8
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="py-12 bg-brand-bgLight px-5">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-8">
+                <h3 class="text-xs text-brand-gold font-bold uppercase tracking-widest mb-2">In the Demo Class</h3>
+                <h2 class="font-serif text-2xl font-bold text-brand-textDark">
+                    What Your Child Will Learn
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl p-5 shadow-sm flex gap-4 items-start">
+                    <div
+                        class="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center text-brand-gold flex-shrink-0">
+                        <i class="fa-solid fa-bolt text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-textDark mb-1">3 Vedic Maths Shortcuts</h4>
+                        <p class="text-sm text-slate-600">Multiply 2-digit numbers in seconds — no calculator needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-5 shadow-sm flex gap-4 items-start">
+                    <div
+                        class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-brand-cyan flex-shrink-0">
+                        <i class="fa-solid fa-brain text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Logic-First Thinking</h4>
+                        <p class="text-sm text-slate-600">Don't just solve. Think. Build the mental model that scores
+                            marks.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-5 shadow-sm flex gap-4 items-start">
+                    <div
+                        class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center text-green-600 flex-shrink-0">
+                        <i class="fa-solid fa-book-open text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Free Shortcut Booklet</h4>
+                        <p class="text-sm text-slate-600">Take-home Maths Shortcut Card (worth ₹150) — yours to keep.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-5 shadow-sm flex gap-4 items-start">
+                    <div
+                        class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 flex-shrink-0">
+                        <i class="fa-solid fa-users text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-textDark mb-1">Parents Welcome</h4>
+                        <p class="text-sm text-slate-600">Join your child. Watch the methodology firsthand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Founder -->
+    <section class="py-12 bg-white px-5">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-6">
+                <h3 class="text-xs text-brand-gold font-bold uppercase tracking-widest mb-2">Your Mentor</h3>
+                <h2 class="font-serif text-2xl font-bold text-brand-textDark">Meet Noopur</h2>
+            </div>
+
+            <div class="bg-brand-bgLight rounded-2xl p-6 text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-200 mx-auto mb-4 overflow-hidden">
+                    <img src="./noopur.jpg" alt="Noopur, Founder Q-Logic Labs"
+                        class="w-full h-full object-cover object-top">
+                </div>
+                <h4 class="font-bold text-brand-textDark text-lg mb-1">Noopur</h4>
+                <p class="text-sm text-brand-gold font-semibold mb-4">Founder, Q-Logic Labs</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    10+ years teaching CBSE/ICSE & competitive exams (CLAT, CAT, IPMAT, GMAT). Returning to her roots in
+                    Jalalabad to bring premium logic-first education to her hometown.
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-slate-200">
+                    <div>
+                        <div class="text-2xl font-bold text-brand-navy">500+</div>
+                        <div class="text-xs text-slate-500">Students Mentored</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-brand-navy">10+</div>
+                        <div class="text-xs text-slate-500">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Form -->
+    <section id="register" class="py-12 bg-brand-navy px-5">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-6">
+                <h3 class="text-xs text-brand-cyan font-bold uppercase tracking-widest mb-2">Reserve Your Seat</h3>
+                <h2 class="font-serif text-2xl font-bold text-white">Register for Demo</h2>
+                <p class="text-slate-300 text-sm mt-2">Pay ₹49 at the institute on demo day</p>
+            </div>
+
+            <!-- 
+              REPLACE THE FORM ACTION URL BELOW WITH YOUR GOOGLE FORM "FORMRESPONSE" URL
+              OR USE A FREE SERVICE LIKE FORMSPREE.IO
+              For now, this is a placeholder that opens WhatsApp with details pre-filled.
+            -->
+            <form id="registerForm" class="bg-white rounded-2xl p-6 space-y-4" onsubmit="handleRegister(event)">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Parent's Name *</label>
+                    <input type="text" name="parent" required
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition"
+                        placeholder="e.g. Rajesh Kumar">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Student's Name *</label>
+                    <input type="text" name="student" required
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition"
+                        placeholder="e.g. Aarav Kumar">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Class *</label>
+                        <select name="class" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition bg-white">
+                            <option value="">Select</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                            <option>Class 11</option>
+                            <option>Class 12</option>
+                            <option>College</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Batch *</label>
+                        <select name="batch" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition bg-white">
+                            <option value="">Select</option>
+                            <option>Weekday (May 12)</option>
+                            <option>Weekend (May 18)</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">WhatsApp Number *</label>
+                    <input type="tel" name="phone" required pattern="[0-9]{10}" maxlength="10"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition"
+                        placeholder="10-digit mobile">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">School Name</label>
+                    <input type="text" name="school"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition"
+                        placeholder="Optional">
+                </div>
+
+                <!-- Hidden silent capture for upsell -->
+                <div class="bg-slate-50 rounded-lg p-3">
+                    <label class="flex items-start gap-2 cursor-pointer">
+                        <input type="checkbox" name="future_interest" class="mt-1 accent-brand-cyan">
+                        <span class="text-xs text-slate-600">
+                            I'm also interested in updates about <span class="font-semibold">Class 11-12 / Competitive
+                                Exam (CLAT, CAT, IPMAT) coaching</span> when it launches.
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-brand-gold hover:bg-brand-goldHover text-white px-6 py-4 rounded-xl text-lg font-bold shadow-lg transition-all transform hover:-translate-y-0.5">
+                    Reserve My Seat →
+                </button>
+                <p class="text-center text-xs text-slate-500 mt-2">
+                    No payment now · We'll confirm via WhatsApp
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="py-10 bg-white px-5">
+        <div class="max-w-md mx-auto text-center">
+            <h3 class="text-xs text-brand-gold font-bold uppercase tracking-widest mb-2">Visit Us</h3>
+            <h2 class="font-serif text-xl font-bold text-brand-textDark mb-3">Q-Logic Labs Institute</h2>
+            <p class="text-slate-600 mb-4">
+                Opp. LIDG DAV School,<br />
+                Jalalabad, Punjab
+            </p>
+            <a href="https://maps.google.com/?q=LIDG+DAV+School+Jalalabad+Punjab" target="_blank"
+                class="inline-flex items-center text-brand-cyan hover:underline font-semibold">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                Get Directions
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-slate-400 py-10 px-5">
+        <div class="max-w-md mx-auto text-center">
+            <span class="text-xl font-serif font-bold text-white block mb-2">Q-Logic Labs</span>
+            <p class="text-xs uppercase tracking-widest text-brand-cyan mb-4">Quant · Logic · Reasoning</p>
+            <p class="italic text-sm text-slate-300 mb-6">"Don't just solve. Think."</p>
+
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://wa.me/919876650116" target="_blank"
+                    class="text-slate-400 hover:text-green-400 transition">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                </a>
+                <a href="tel:+919876650116" class="text-slate-400 hover:text-white transition">
+                    <i class="fa-solid fa-phone text-2xl"></i>
+                </a>
+                <a href="mailto:contact@qlogiclabs.com" class="text-slate-400 hover:text-white transition">
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                </a>
+            </div>
+
+            <p class="text-xs">© 2026 Q-Logic Labs · Jalalabad, Punjab</p>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button (mobile) -->
+    <a href="https://wa.me/919876650116?text=Namaste%2C%20mujhe%20Vedic%20Maths%20Workshop%20ke%20baare%20mein%20jaankari%20chahiye"
+        target="_blank"
+        class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center pulse-ring z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        // Form handler — submits silently to Google Form AND opens WhatsApp
+        const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSd60mtxnq_FzJWzlzSF42vvZRkIUT_TatkZHST9jtI6kV6hcg/formResponse';
+
+        function handleRegister(e) {
+            e.preventDefault();
+            const f = e.target;
+
+            // Step 1: Build the Google Forms submission payload
+            const formData = new FormData();
+            formData.append('entry.1719649928', f.parent.value);          // Parent's Name
+            formData.append('entry.1877685200', f.student.value);         // Student's Name
+            formData.append('entry.1947441162', f.class.value);           // Class
+            formData.append('entry.1965091720', f.batch.value);           // Batch
+            formData.append('entry.28611341', f.phone.value);           // WhatsApp Number
+            formData.append('entry.1281786528', f.school.value || '');    // School Name
+            if (f.future_interest.checked) {
+                formData.append('entry.1895077360', 'Yes');               // Future Interest
+            }
+
+            // Step 2: Submit silently to Google Form (no-cors mode = fire-and-forget)
+            fetch(GOOGLE_FORM_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            }).catch(err => console.log('Form submit error:', err));
+
+            // Step 3: Show "submitted" feedback for 1 second, then redirect to WhatsApp
+            const btn = f.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '✅ Registered! Opening WhatsApp...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const msg = `🎓 *Vedic Maths Demo Registration*%0A%0A`
+                    + `*Parent:* ${encodeURIComponent(f.parent.value)}%0A`
+                    + `*Student:* ${encodeURIComponent(f.student.value)}%0A`
+                    + `*Class:* ${encodeURIComponent(f.class.value)}%0A`
+                    + `*Batch:* ${encodeURIComponent(f.batch.value)}%0A`
+                    + `*Phone:* ${encodeURIComponent(f.phone.value)}%0A`
+                    + `*School:* ${encodeURIComponent(f.school.value || 'N/A')}%0A`
+                    + `*Class 11-12 Interest:* ${f.future_interest.checked ? 'Yes' : 'No'}`;
+                window.location.href = `https://wa.me/919876650116?text=${msg}`;
+            }, 1200);
+        }
+    </script>
+
+</body>
+
+</html>
