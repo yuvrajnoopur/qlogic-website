@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QLogic Labs | Elite Exam Preparation</title>
+    <title>Q-Logic Labs | Don't Just Solve. Think.</title>
+    <meta name="description" content="A premium thinking-school in Jalalabad + Online India. Vedic Maths, Logical Reasoning, CBSE/ICSE Class 9-10, CLAT, CAT, IPMAT, GMAT prep. Founded by Noopur Aggarwal, 10+ years teaching.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Q-Logic Labs | Don't Just Solve. Think.">
+    <meta property="og:description" content="A premium thinking-school. Jalalabad campus + Live online batches India-wide. Book a ₹49 demo class.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qlogic.co.in">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,11 +30,12 @@
                     },
                     colors: {
                         brand: {
-                            navy: '#0f172a', // slate-900
-                            gold: '#d97706', // amber-600
-                            goldHover: '#b45309', // amber-700
-                            textDark: '#1e293b', // slate-800
-                            bgLight: '#f8fafc', // slate-50
+                            navy: '#0f172a',
+                            cyan: '#00B4D8',
+                            gold: '#d97706',
+                            goldHover: '#b45309',
+                            textDark: '#1e293b',
+                            bgLight: '#f8fafc',
                         }
                     }
                 }
@@ -40,17 +46,16 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
     <style>
-        /* Custom Styles if needed */
         .hero-pattern {
             background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
             background-size: 30px 30px;
         }
     </style>
-
-    <!-- Calendly Link Widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body class="font-sans antialiased text-brand-textDark bg-brand-bgLight">
@@ -59,19 +64,19 @@
     <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-navy shadow-lg" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="text-2xl font-serif font-bold text-white tracking-wide">
-                        QLogic
+                    <a href="/" class="text-2xl font-serif font-bold text-white tracking-wide">
+                        Q-Logic <span class="text-brand-cyan">Labs</span>
                     </a>
                 </div>
-
-                <!-- CTA Button -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#programs" class="text-slate-300 hover:text-white text-sm font-medium transition-colors">Programs</a>
+                    <a href="#founder" class="text-slate-300 hover:text-white text-sm font-medium transition-colors">About</a>
+                    <a href="#results" class="text-slate-300 hover:text-white text-sm font-medium transition-colors">Results</a>
+                </div>
                 <div class="flex items-center">
-                    <a href=""
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/qlogiclabs/free-first-consultation'});return false;"
-                        class="bg-brand-gold hover:bg-brand-goldHover text-white px-6 py-2.5 rounded-md font-medium text-sm transition-colors duration-200 shadow-md">
-                        Book Consultation
+                    <a href="/demo.html" class="bg-brand-gold hover:bg-brand-goldHover text-white px-6 py-2.5 rounded-md font-medium text-sm transition-colors duration-200 shadow-md">
+                        Book ₹49 Demo
                     </a>
                 </div>
             </div>
@@ -83,232 +88,280 @@
         <div class="absolute inset-0 hero-pattern opacity-10"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-            <h1
-                class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
-                Elite Quant & Logic Strategy <br class="hidden sm:block" /> for <span class="text-brand-gold">GMAT, CAT,
-                    & CLAT</span>
+            <p class="text-brand-cyan text-sm font-semibold tracking-widest uppercase mb-6">
+                Quant · Logic · Reasoning
+            </p>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                Don't just solve. <span class="text-brand-cyan">Think.</span>
             </h1>
 
             <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-300 font-light mb-10">
-                Master the exams that define your future. Personalized mentorship for high-achievers.
+                A premium thinking-school for students who want stronger fundamentals — not just better marks.
+                <br class="hidden sm:block" />
+                Jalalabad campus + Live online batches India-wide.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/qlogiclabs/free-first-consultation'});return false;"
-                    class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-white px-8 py-4 rounded-md text-lg font-semibold shadow-lg transition-transform transform hover:-translate-y-1">
-                    Schedule Free Assessment
+                <a href="/demo.html" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-white px-8 py-4 rounded-md text-lg font-semibold shadow-lg transition-transform transform hover:-translate-y-1">
+                    Book a ₹49 Demo Class
+                </a>
+                <a href="#programs" class="w-full sm:w-auto text-white border border-slate-600 hover:border-brand-cyan px-8 py-4 rounded-md text-lg font-medium transition-colors">
+                    Explore Programs
                 </a>
             </div>
 
-            <p class="mt-8 text-sm text-slate-400 uppercase tracking-widest font-medium">
-                <i class="fa-solid fa-check-circle text-brand-gold mr-2"></i> Specializing in Quant, Data
-                Interpretation, and Analytical Reasoning
+            <p class="mt-6 text-sm text-slate-400">
+                Not sure which program fits your child?
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/qlogiclabs/free-first-consultation'});return false;" class="text-brand-cyan hover:text-white underline underline-offset-4 ml-1 transition-colors">
+                    Book a free counselling call →
+                </a>
+            </p>
+
+            <p class="mt-6 text-sm text-slate-400 uppercase tracking-widest font-medium">
+                <i class="fa-solid fa-circle-check text-brand-gold mr-2"></i>
+                Small batches · 10–15 students · New batch every 2 weeks
             </p>
         </div>
     </section>
 
-    <!-- Authority Bio -->
-    <section class="py-20 bg-white">
+    <!-- Founder Section -->
+    <section id="founder" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                 <!-- Image Column -->
                 <div class="relative mb-12 lg:mb-0">
-                    <div
-                        class="relative rounded-lg shadow-2xl overflow-hidden bg-slate-200 aspect-[4/5] max-w-md mx-auto lg:mx-0">
-                        <!-- Expert Image -->
-                        <img src="./noopur.jpg" alt="Noopur - QLogic Expert"
-                            class="w-full h-full object-cover object-top">
+                    <div class="relative rounded-lg shadow-2xl overflow-hidden bg-slate-200 aspect-[4/5] max-w-md mx-auto lg:mx-0">
+                        <img src="./noopur.jpg" alt="Noopur Aggarwal — Founder, Q-Logic Labs" class="w-full h-full object-cover object-top">
                     </div>
-                    <!-- Experience Badge -->
-                    <div
-                        class="absolute -bottom-6 -right-6 lg:right-10 bg-brand-navy p-6 rounded-lg shadow-xl text-white hidden sm:block">
-                        <p class="text-3xl font-bold font-serif text-brand-gold">6+</p>
-                        <p class="text-sm font-medium uppercase tracking-wide">Years Experience</p>
+                    <div class="absolute -bottom-6 -right-6 lg:right-10 bg-brand-navy p-6 rounded-lg shadow-xl text-white hidden sm:block">
+                        <p class="text-3xl font-bold font-serif text-brand-gold">10+</p>
+                        <p class="text-sm font-medium uppercase tracking-wide">Years Teaching</p>
                     </div>
                 </div>
 
                 <!-- Text Column -->
                 <div>
-                    <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">The Expert</h2>
+                    <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">The Founder</h2>
                     <h3 class="text-3xl sm:text-4xl font-serif font-bold text-brand-textDark mb-6">
-                        I don't just teach math; <br /> I teach the logic behind the exam.
+                        Hi, I'm Noopur. <br /> I'm coming home to teach.
                     </h3>
                     <div class="prose prose-lg text-slate-600">
                         <p class="mb-6">
-                            With over 6 years of experience across CBSE/ICSE and 3+ years specializing in online
-                            coaching for competitive exams, I bridge the gap between academic theory and exam-day
-                            strategy.
+                            For 10+ years I've taught students across India online — CBSE/ICSE Maths & Science for Class 9-10, and Quant + Logical Reasoning for CLAT, CAT, IPMAT, GMAT, and Banking exams.
+                        </p>
+                        <p class="mb-6">
+                            One question kept coming up: <em>"Ma'am, why didn't anyone teach us this in school?"</em>
                         </p>
                         <p>
-                            My approach focuses on deconstructing complex problems into simple, logical steps. Whether
-                            you are aiming for top-tier MBA programs or prestigious law schools, high scores require
-                            more than just formulas—they require a strategic mindset.
+                            Q-Logic Labs is my answer. A small, premium thinking-school in Jalalabad — with live online batches for students across India — where children learn <strong>how to think</strong>, not just what to memorize.
                         </p>
                     </div>
 
-                    <div class="mt-8 pt-8 border-t border-slate-100 flex items-center gap-8">
+                    <div class="mt-8 pt-8 border-t border-slate-100 grid grid-cols-2 gap-6">
                         <div>
-                            <span class="block text-2xl font-bold text-brand-textDark">500+</span>
-                            <span class="text-sm text-slate-500">Students Mentored</span>
+                            <span class="block text-2xl font-bold text-brand-textDark">10+</span>
+                            <span class="text-sm text-slate-500">Years of Teaching Across India</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold text-brand-textDark">99%</span>
-                            <span class="text-sm text-slate-500">Satisfaction Rate</span>
+                            <span class="block text-2xl font-bold text-brand-textDark">5</span>
+                            <span class="text-sm text-slate-500">Exams Taught: CBSE, CLAT, CAT, IPMAT, GMAT</span>
                         </div>
                     </div>
+
+                    <p class="mt-6 text-xs text-slate-400 italic">
+                        <i class="fa-solid fa-newspaper mr-1"></i> Featured in regional press for work in Vedic Mathematics education.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Offerings -->
-    <section class="py-20 bg-brand-bgLight" id="offerings">
+    <!-- Programs / 3 Verticals -->
+    <section class="py-20 bg-brand-bgLight" id="programs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">Our Programs</h2>
+                <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">Three Programs</h2>
                 <h3 class="text-3xl sm:text-4xl font-serif font-bold text-brand-textDark">
-                    Targeted Preparation
+                    Built for how children actually learn
                 </h3>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-600">
+                    Each program is designed around one principle: build the thinking first, the marks follow.
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100">
-                    <div
-                        class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-navy">
+                <!-- Beyond Books -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-brand-gold relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">
+                        Launching May 2026
+                    </div>
+                    <div class="w-14 h-14 bg-amber-50 rounded-full flex items-center justify-center mb-6 text-brand-gold">
+                        <i class="fa-solid fa-brain text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-textDark mb-2 font-serif">Beyond Books Classes</h4>
+                    <p class="text-sm text-slate-500 mb-4 italic">For Classes 4–8</p>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Vedic Mathematics</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Mental Math Mastery</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Logical Reasoning</li>
+                    </ul>
+                    <a href="/demo.html" class="mt-6 inline-block text-brand-gold font-semibold text-sm hover:underline">Book ₹49 Demo →</a>
+                </div>
+
+                <!-- Extra Marks -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100 relative">
+                    <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">
+                        June 2026
+                    </div>
+                    <div class="w-14 h-14 bg-amber-50 rounded-full flex items-center justify-center mb-6 text-brand-gold">
                         <i class="fa-solid fa-graduation-cap text-2xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-textDark mb-4 font-serif">Entrance Exams</h4>
+                    <h4 class="text-xl font-bold text-brand-textDark mb-2 font-serif">Extra Marks Classes</h4>
+                    <p class="text-sm text-slate-500 mb-4 italic">For Classes 9–10 (CBSE/ICSE)</p>
                     <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            CLAT</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            AILET</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            IPMAT</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Maths — Strong Fundamentals</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Science — Concept First</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> Board Exam Strategy</li>
                     </ul>
+                    <span class="mt-6 inline-block text-slate-400 text-sm">Enrollment opens June</span>
                 </div>
 
-                <!-- Card 2 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-brand-gold relative transform md:-translate-y-4">
-                    <div
-                        class="absolute top-0 right-0 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">
-                        Most Popular
+                <!-- Career Edge -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100 relative">
+                    <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">
+                        Aug 2026
                     </div>
-                    <div
-                        class="w-14 h-14 bg-amber-50 rounded-full flex items-center justify-center mb-6 text-brand-gold">
-                        <i class="fa-solid fa-globe text-2xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-brand-textDark mb-4 font-serif">Management & Abroad</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            GMAT</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> CAT
-                        </li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> GRE
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100">
-                    <div
-                        class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-navy">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-navy">
                         <i class="fa-solid fa-briefcase text-2xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-textDark mb-4 font-serif">Recruitment</h4>
+                    <h4 class="text-xl font-bold text-brand-textDark mb-2 font-serif">Career Edge Classes</h4>
+                    <p class="text-sm text-slate-500 mb-4 italic">For Classes 11–12 & Graduates</p>
                     <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i> SSC
-                            (CGL/CHSL)</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            Banking Exams</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3 text-sm"></i>
-                            Campus Placements</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-navy mr-3 text-sm"></i> CLAT · IPMAT</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-navy mr-3 text-sm"></i> CAT · GMAT</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-navy mr-3 text-sm"></i> Banking Quant + LR</li>
                     </ul>
+                    <span class="mt-6 inline-block text-slate-400 text-sm">Enrollment opens August</span>
                 </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="/demo.html" class="inline-block bg-brand-gold hover:bg-brand-goldHover text-white px-8 py-4 rounded-md text-lg font-semibold shadow-lg transition-transform transform hover:-translate-y-1">
+                    Start with a ₹49 Demo Class
+                </a>
+                <p class="mt-4 text-sm text-slate-500">New batch every 2 weeks · 10–15 students per batch</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-20 bg-white">
+    <!-- Results / Success Stories -->
+    <section id="results" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">Social Proof</h2>
+                <h2 class="text-base text-brand-gold font-semibold tracking-wide uppercase mb-2">Results</h2>
                 <h3 class="text-3xl sm:text-4xl font-serif font-bold text-brand-textDark">
-                    Student Outcomes
+                    Where past students have gone
                 </h3>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-600">
+                    A decade of teaching online — these are some of the journeys students have taken with our methodology.
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 italic text-slate-600 relative">
-                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-4 left-4 -z-0"></i>
-                    <div class="flex text-amber-500 mb-4 relative z-10">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
+                <!-- Result 1 -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 relative">
+                    <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
                     </div>
-                    <p class="relative z-10 mb-6">"The strategies for Data Interpretation changed my score completely. I
-                        finally understood the 'why' behind the answers."</p>
-                    <div class="font-bold text-brand-navy not-italic">- Priya S., CAT Aspirant</div>
+                    <h4 class="text-lg font-bold text-brand-textDark mb-3 font-serif">Admitted to NLU via CLAT</h4>
+                    <p class="text-slate-600 text-sm mb-4">A student who built logical reasoning fundamentals through our Beyond Books methodology and went on to crack CLAT for a top National Law University.</p>
+                    <span class="text-xs text-brand-gold font-semibold uppercase tracking-wide">Career Edge + Beyond Books Dual Program</span>
                 </div>
 
-                <!-- Review 2 -->
-                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 italic text-slate-600 relative">
-                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-4 left-4 -z-0"></i>
-                    <div class="flex text-amber-500 mb-4 relative z-10">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
+                <!-- Result 2 -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 relative">
+                    <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fa-solid fa-globe text-xl"></i>
                     </div>
-                    <p class="relative z-10 mb-6">"Logic was my weak point until I joined QLogic. The personalized
-                        approach helped me clear CLAT in my first attempt."</p>
-                    <div class="font-bold text-brand-navy not-italic">- Rahul M., NLU Student</div>
+                    <h4 class="text-lg font-bold text-brand-textDark mb-3 font-serif">Admitted to LSE via GMAT</h4>
+                    <p class="text-slate-600 text-sm mb-4">A working professional who cleared GMAT Quant with the help of our shortcut-based methodology and joined the London School of Economics.</p>
+                    <span class="text-xs text-brand-gold font-semibold uppercase tracking-wide">Career Edge Program</span>
                 </div>
 
-                <!-- Review 3 -->
-                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 italic text-slate-600 relative">
-                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-4 left-4 -z-0"></i>
-                    <div class="flex text-amber-500 mb-4 relative z-10">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
+                <!-- Result 3 -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-100 relative">
+                    <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fa-solid fa-arrow-trend-up text-xl"></i>
                     </div>
-                    <p class="relative z-10 mb-6">"Highly recommended for GMAT prep. The quant shortcuts saved me so
-                        much time during the actual exam."</p>
-                    <div class="font-bold text-brand-navy not-italic">- Ankit D., MBA Candidate</div>
+                    <h4 class="text-lg font-bold text-brand-textDark mb-3 font-serif">Significant CBSE / ICSE score gains</h4>
+                    <p class="text-slate-600 text-sm mb-4">Class 9–10 students who moved from struggling with Maths & Science fundamentals to scoring in the top brackets in board exams.</p>
+                    <span class="text-xs text-brand-gold font-semibold uppercase tracking-wide">Extra Marks + Beyond Books Dual Program</span>
                 </div>
             </div>
+
+            <p class="text-center mt-12 text-xs text-slate-400 italic">
+                Names withheld to respect student privacy. Detailed testimonials available on request.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-brand-navy">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">
+                Try a class before you commit.
+            </h3>
+            <p class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
+                A real 60-minute class. Mental math shortcuts. A free Maths Shortcut Booklet. Just ₹49.
+            </p>
+            <a href="/demo.html" class="inline-block bg-brand-gold hover:bg-brand-goldHover text-white px-10 py-4 rounded-md text-lg font-semibold shadow-lg transition-transform transform hover:-translate-y-1">
+                Book Your ₹49 Demo Class
+            </a>
+
+            <p class="mt-8 text-sm text-slate-300">
+                Confused about which program fits?
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/qlogiclabs/free-first-consultation'});return false;" class="text-white underline underline-offset-4 hover:text-amber-300 ml-1">
+                    Schedule a free 15-min counselling call
+                </a>
+            </p>
+
+            <p class="mt-4 text-sm text-slate-400">
+                Or WhatsApp us directly: <a href="https://wa.me/919876650116" class="text-slate-300 hover:text-white underline underline-offset-4">+91 98766 50116</a>
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-navy text-slate-400 py-12">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <span class="text-2xl font-serif font-bold text-white block mb-2">QLogic Labs</span>
-                <p class="text-sm">© 2026 QLogic Labs. All rights reserved.</p>
+    <footer class="bg-brand-navy text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <span class="text-2xl font-serif font-bold text-white block mb-2">Q-Logic <span class="text-brand-cyan">Labs</span></span>
+                    <p class="text-sm italic mb-2">Don't just solve. Think.</p>
+                    <p class="text-xs">Quant · Logic · Reasoning</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Visit Us</h5>
+                    <p class="text-sm">Opp. LIDG DAV School,<br />Jalalabad, Punjab</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Connect</h5>
+                    <p class="text-sm mb-1"><a href="https://wa.me/919876650116" class="hover:text-white">WhatsApp: +91 98766 50116</a></p>
+                    <p class="text-sm mb-1"><a href="https://instagram.com/qlogiclabs.in" class="hover:text-white">Instagram: @qlogiclabs.in</a></p>
+                    <p class="text-sm mb-3"><a href="mailto:qlogic.jbd@gmail.com" class="hover:text-white">Email: qlogic.jbd@gmail.com</a></p>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="https://instagram.com/qlogiclabs.in" class="text-slate-400 hover:text-white"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="https://wa.me/919876650116" class="text-slate-400 hover:text-white"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                        <a href="mailto:qlogic.jbd@gmail.com" class="text-slate-400 hover:text-white"><i class="fa-solid fa-envelope text-xl"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="flex space-x-6">
-                <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                    <span class="sr-only">LinkedIn</span>
-                    <i class="fa-brands fa-linkedin text-2xl"></i>
-                </a>
-                <a href="mailto:contact@qlogiclabs.com" class="text-slate-400 hover:text-white transition-colors">
-                    <span class="sr-only">Email</span>
-                    <i class="fa-solid fa-envelope text-2xl"></i>
-                </a>
+            <div class="border-t border-slate-800 pt-6 text-center">
+                <p class="text-xs">© 2026 Q-Logic Labs. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
 </body>
-
 </html>
