@@ -92,8 +92,21 @@
 
 <body class="font-sans antialiased text-brand-textDark bg-brand-bgLight">
 
+    <!-- Navigation -->
+    <nav class="bg-brand-navy py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl font-serif font-bold text-white tracking-wide">
+                Q-Logic <span class="text-brand-cyan">Labs</span>
+            </a>
+            <a href="/"
+                class="text-slate-300 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Home
+            </a>
+        </div>
+    </nav>
+
     <!-- Top Bar -->
-    <div class="bg-brand-navy text-white text-center py-2 text-xs sm:text-sm font-medium">
+    <div class="bg-brand-navy/90 text-white text-center py-2 text-xs sm:text-sm font-medium border-t border-slate-700/50">
         <i class="fa-solid fa-award text-brand-cyan mr-2"></i>
         Taught by an educator with <span class="font-bold">10+ years</span> in Vedic Maths & Quant
     </div>
@@ -350,9 +363,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="mode">Preferred Mode <span class="required">*</span></label>
-                    <select id="mode" name="entry.1046831331" required>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Preferred Mode *</label>
+                    <select id="mode" name="mode" required
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 outline-none transition bg-white">
                         <option value="">Select mode</option>
                         <option value="Offline (Jalalabad campus)">Offline (Jalalabad campus)</option>
                         <option value="Online (Live class)">Online (Live class)</option>
@@ -462,6 +476,7 @@
             formData.append('entry.1877685200', f.student.value);         // Student's Name
             formData.append('entry.1947441162', f.class.value);           // Class
             formData.append('entry.1965091720', f.batch.value);           // Batch
+            formData.append('entry.1046831331', f.mode.value);             // Preferred Mode
             formData.append('entry.28611341', f.phone.value);             // WhatsApp Number
             formData.append('entry.1281786528', f.school.value || '');    // School Name
             if (f.future_interest.checked) {
